@@ -1,0 +1,87 @@
+object fMain: TfMain
+  Left = 255
+  Height = 453
+  Top = 180
+  Width = 560
+  Align = alTop
+  BorderStyle = bsDialog
+  Caption = 'Персонажи TeenWolf'
+  ClientHeight = 453
+  ClientWidth = 560
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.4.0'
+  object bAdd: TSpeedButton
+    Left = 48
+    Height = 38
+    Top = 24
+    Width = 200
+    Caption = 'Добавить Персонажа'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = bAddClick
+    ParentFont = False
+  end
+  object bEdit: TSpeedButton
+    Left = 296
+    Height = 38
+    Top = 72
+    Width = 224
+    Caption = 'Редактировать Персонажа'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = bEditClick
+    ParentFont = False
+  end
+  object bDel: TSpeedButton
+    Left = 48
+    Height = 38
+    Top = 72
+    Width = 200
+    Caption = 'Удалить Персонажа'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = bDelClick
+    ParentFont = False
+  end
+  object bSort: TSpeedButton
+    Left = 296
+    Height = 38
+    Top = 24
+    Width = 224
+    Caption = 'Сортировать список'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = bSortClick
+    ParentFont = False
+  end
+  object SG: TStringGrid
+    AnchorSideLeft.Side = asrBottom
+    Left = 0
+    Height = 320
+    Top = 133
+    Width = 560
+    Align = alBottom
+    AlternateColor = 7945472
+    ColCount = 3
+    ColRowDragIndicatorColor = 10289152
+    FixedCols = 0
+    GridLineColor = 11425536
+    RowCount = 1
+    TabOrder = 0
+    OnDblClick = bEditClick
+  end
+end

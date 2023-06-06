@@ -1,0 +1,93 @@
+object fEdit: TfEdit
+  Left = 437
+  Height = 208
+  Top = 122
+  Width = 515
+  BorderStyle = bsDialog
+  Caption = 'Редактор персонажа'
+  ClientHeight = 208
+  ClientWidth = 515
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
+  object Label1: TLabel
+    Left = 26
+    Height = 15
+    Top = 6
+    Width = 135
+    Caption = 'Укажите имя персонажа'
+    ParentColor = False
+  end
+  object eName: TEdit
+    Left = 26
+    Height = 23
+    Top = 30
+    Width = 304
+    Color = 16744448
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 26
+    Height = 15
+    Top = 62
+    Width = 120
+    Caption = 'Укажите способность'
+    ParentColor = False
+  end
+  object eTelephone: TEdit
+    Left = 26
+    Height = 23
+    Top = 88
+    Width = 168
+    Color = clMenuHighlight
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 26
+    Height = 15
+    Top = 120
+    Width = 88
+    Caption = 'Выберите сезон'
+    ParentColor = False
+  end
+  object CBNote: TComboBox
+    Left = 26
+    Height = 23
+    Top = 139
+    Width = 168
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Первый сезон'
+      'Второй сезон'
+      'Третий сезон'
+      'Четвертый сезон'
+      'Пятный сезон'
+      'Шестой сезон'
+    )
+    TabOrder = 2
+    Text = 'Первый сезон'
+  end
+  object bSave: TBitBtn
+    Left = 26
+    Height = 21
+    Top = 171
+    Width = 128
+    Caption = 'Сохранить персонажа'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object bCancel: TBitBtn
+    Left = 179
+    Height = 21
+    Top = 171
+    Width = 128
+    Cancel = True
+    Caption = 'Не сохранять'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 4
+  end
+end
